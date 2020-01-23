@@ -12,8 +12,8 @@ function mailer(Event, first_name) {
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                  user: 'evntinc@gmail.com',
-                  pass: 'evnt@1234'
+                  user: 'email@gmail.com',
+                  pass: 'password'
                 }
             });
         

@@ -12,8 +12,8 @@ function mailer(Event, first_name) {
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                  user: 'evntinc@gmail.com',
-                  pass: 'evnt@1234'
+                  user: 'email@gmail.com',
+                  pass: 'password'
                 }
             });
         
@@ -66,32 +66,6 @@ router.post('/', function(req, res) {
         res.send({err: error, flag:false});
     })
 
-    // console.log(userx);
-    // userx.events = userx.events.filter((x) => {
-    //     if(x._id == req.body._id) {
-    //         return false;
-    //     }
-    //     else {
-    //         return true;
-    //     }
-    // })
-
-    // console.log(userx);
-    // Evntpersonal.findOneAndUpdate({email:req.body.username}, {$set: userx}).
-    // then(() => {
-    //         res.send({err: false, flag:true})
-    // })
-    // .catch(err => {
-    //     res.send({err: err, flag:false});
-    // })
-    // Evntpersonal.findOneAndUpdate({email:req.body.username}, {$set: {first_name: userx.first_name,
-    //     last_name: userx.last_name, email: userx.email,password: userx.password,admin: userx.admin,events: x}}).
-    // then(() => {
-    //         res.send({err: false, flag:true})
-    // })
-    // .catch(err => {
-    //     res.send({err: err, flag:false});
-    // })
 })
 
 
